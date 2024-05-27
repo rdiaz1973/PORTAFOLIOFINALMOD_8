@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container text-center mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-1">
+                <h1>Hello, World!</h1>
+                <h2 id="myname">My name is</h2>
+                <h3>Rodrigo Díaz Guíñez</h3>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <img src="{% static 'img/perfil.jpg' %}"  alt="Perfil" style="width:60%; border-radius:50%; box-shadow: 0px 0px 20px rgba(106, 21, 162, 0.5);">
+            </div>
+        </div>
+        <div class="homeh2"><h2>Full Stack Developer Python Django</h2> </div>
+    </div>
+{% endblock %}
