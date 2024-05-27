@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'homeapp',
     'contactapp',
     'blogapp',
+    'authapp',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,10 @@ TEMPLATES = [
         },
     },
 ]
+
+# LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = '/profile/'
+
 
 WSGI_APPLICATION = 'myportafolio.wsgi.application'
 
@@ -123,6 +128,13 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR /'static',
 ]
+
+
+
+
+# Configuración para archivos multimedia (imágenes de perfil)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
